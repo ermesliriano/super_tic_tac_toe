@@ -1,8 +1,9 @@
 {
     "game" : {
-        "screen_size" : [480, 640],
+        "screen_size" : [480, 480],
         "title" : "Super Tic Tac Toe"
+    },
+    "entities" : {
+        "intro_file" : ["super_tic_tac_toe.assets.images", "game_intro.png"]
     }
 }
-        
-        

@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='walking-girl',
+    name='super-tic-tac-toe',
     version='0.1.0',
     packages=['super_tic_tac_toe'],
     install_requires=["pygame","importlib"],
