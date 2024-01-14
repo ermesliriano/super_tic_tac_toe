@@ -34,13 +34,15 @@ class Game:
             self.render()
 
     def handle(self):
+        x, y = pygame.mouse.get_pos()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 self.__is_running = False
             if event.type == pygame.MOUSEBUTTONDOWN:
                 self.__intro_scene.set_start_scene(self.__start_scene)
+                self.__start_scene.handle_mouse_click(x, y)
                 
-        x, y = pygame.mouse.get_pos()
+        
 
     def render(self):
             self.__screen.fill(cfg_item("game","bg_color"))
