@@ -8,8 +8,10 @@ class Intro_scene:
         self.__intro_text, self.__click_start_visible, self.__in_intro = "Click to start" , True, True
         with resources.path(file_path[0], file_path[1]) as intro_filename:
             self.image = pygame.image.load(intro_filename).convert_alpha()
+        self.is_visible = True
 
     def run(self):
+        if self.is_visible:
             click_start_txt = self.__font.render(self.__intro_text, True, (255,255,255))
             text_rect = click_start_txt.get_rect(center=(480/2,(480*0.90)))
             self.__screen.blit(self.image, (35,0))

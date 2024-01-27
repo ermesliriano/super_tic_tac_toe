@@ -40,7 +40,7 @@ class Game:
                 self.__is_running = False
             if event.type == pygame.MOUSEBUTTONDOWN:
                 self.__intro_scene.set_start_scene(self.__start_scene)
-                self.__start_scene.handle_mouse_click(x, y)
+                self.__start_scene.handle_mouse_click(x, y, self.__intro_scene, self.__start_scene)
                 
         
 
